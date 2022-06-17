@@ -1,42 +1,54 @@
-<!DOCTYPE html>
-<html lang="en">
+nav{
+    display:flex;
+    justify-content: center;
+    
+}
+nav a{
+    font-size: xx-large;
+}
+nav p{
+    color: green;
+    font-size: 1.2rem;
+}
+main{
+    display: grid;
+    grid-template-rows: 1fr 1fr; 
+    /* grid-template-columns: 2fr 1fr; */
+    grid-gap: 15px;
+    padding: 20px;
+    text-align: center;
+    width: 60%;
+    margin: auto;
+}
+.top{
+    display:grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 15px;
+}
+.bottom{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 15px;
+}
+.A{
+    background-color: rgb(221, 59, 10);
+    padding: 6rem;
+}
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="favicon-32*32.png" rel="icon" type="image/x-icon">
-  <link href="grid.css" rel="stylesheet">
-  <title>Flexbox</title>
-</head>
-<body>
-    <nav>
-        <p>Click on <a href="index.html">flex design</a> to see my flex design</p>
-    </nav>
+.B{
+    background-color:orange;
+    padding: 6rem;
+}
 
-    <main>
-        <div class="top">
-            <div class="A">
-                A
-            </div>
-            <div class="B">
-                B
-            </div>
-        </div>
-        <div class="bottom">
-            <div class="C">
-                C
-            </div>
-            <div class="D">
-                <div>
-                     D1
-                </div>
-                <div>
-                    D2
-                </div>
-            </div>
-        </div>
-        
-    </main>
-</body>
-</html>
+.C{
+    background-color: rgb(35, 150, 6);
+    padding: 6rem;
+}
+
+.D{
+    background-color: rgb(10, 219, 191);
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 15px;
+}
